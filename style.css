@@ -111,7 +111,7 @@ label input:checked ~ .checkmark {
 }
 
 #createBtn {
-    background: url(/unicorn.jpg) no-repeat; 
+    background: url(unicorn.jpg) no-repeat; 
     padding: 25px;
     border: none;
     text-align: center;
