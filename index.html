@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="style.css">
+        <title>Password Generator</title>
+    </head>
+
+    <body>
+        <h1>Password Generator</h1>
+
+        <section>
+            <h2>Generate your secure password</h2>
+
+            <h3><i>Highlight boxes to include in password</i></h3>
+
+            <label for="lowBox">Lower-case letters
+                <input id="lowBox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <label for="upBox">Upper-case letters
+                <input id="upBox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <label for="numBox">Numbers
+                <input id="numBox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <label for="spcBox">Special characters
+                <input id="spcBox" type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label>
+
+            <input type="text" id="characters" maxlength="2" onkeypress="return isNumber(event)">How many characters in your password? (Choose between 8 ~ 16)</input>
+            
+            <div class="password" type="password">
+                <span id="password"></span>
+            </div>
+
+            <button id="createBtn"></button>
+        </section>
+    </body>
+    <script src="script.js"></script>
+</html>

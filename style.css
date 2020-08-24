@@ -1,0 +1,120 @@
+html {
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(48, 48, 48);
+}
+
+h1 {
+    text-align: center;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    margin: 50px;
+    padding: 15px;
+    background-color: rgb(104, 100, 100);
+}
+
+section {
+    background-color: rgb(104, 100, 100);
+    border-style: inset;
+    border-width: 3px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    padding: 50px;
+    margin: 15px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+label input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+label:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+label input .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: rgb(255, 255, 255);
+    border-width: 0px 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+label input:checked ~ .checkmark {
+    background-color: rgb(255, 0, 0)
+}
+
+#characters {
+    border-width: 3px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    width: 50px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.password {
+    color: black;
+    background-color: #FFFF00;
+    border: 10px;
+    border-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    width: 250px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#createBtn {
+    background: url(/unicorn.jpg) no-repeat; 
+    padding: 25px;
+    border: none;
+    text-align: center;
+    transition-duration: .5s; 
+    color: rgb(0, 0, 109)
+}
